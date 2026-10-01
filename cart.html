@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>Магазин — Кошик</title>
+</head>
+<body>
+  <header>
+    <h1>Кошик</h1>
+    <nav>
+      <a href="index.html">Головна</a> |
+      <a href="catalog.html">Каталог</a> |
+      <a href="cart.html">Кошик</a> |
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <p>Це статична сторінка (без JS кошик не “пам’ятає” товари). Нижче — приклад макету.</p>
+
+    <table border="1" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Кількість</th>
+          <th>Ціна</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Кава зернова 1 кг</td>
+          <td>1</td>
+          <td>499 грн</td>
+        </tr>
+        <tr>
+          <td>Блокнот A5</td>
+          <td>2</td>
+          <td>178 грн</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><strong>Разом</strong></td>
+          <td><strong>677 грн</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Оформлення замовлення (макет)</h2>
+    <form action="#" method="post">
+      <p>
+        <label>Ім'я:<br>
+          <input type="text" name="name" required>
+        </label>
+      </p>
+      <p>
+        <label>Телефон:<br>
+          <input type="tel" name="phone" placeholder="+380..." required>
+        </label>
+      </p>
+      <p>
+        <label>Адреса:<br>
+          <input type="text" name="address" required>
+        </label>
+      </p>
+      <p>
+        <label>Коментар:<br>
+          <textarea name="comment" rows="4" cols="40"></textarea>
+        </label>
+      </p>
+      <button type="submit">Підтвердити</button>
+    </form>
+  </main>
+
+  <hr>
+  <footer>
+    <p><a href="catalog.html">← Повернутись у каталог</a></p>
+  </footer>
+</body>
+</html>
